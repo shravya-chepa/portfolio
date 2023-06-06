@@ -1,0 +1,24 @@
+.nav-bar {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  position: sticky;
+
+  .nav-bar-color {
+    color: #fff;
+  }
+
+  .logo {
+    width: 3rem;
+    position: absolute;
+    top: 15px;
+  }
+
+  .nav-bar-hamburger {
+    border-style: none;
+    background-color: #d49813;
+    border-radius: 50%;
+    font-size: 16px;
+    margin-top: 4px;
+  }
+}
