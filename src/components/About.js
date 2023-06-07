@@ -10,8 +10,6 @@ import travelImg from "../assets/road-trip.png";
 function About() {
   return (
     <div className="about-section" id="about">
-      <br />
-      <br />
       <h1 className="cursive">About</h1>
       <p>
         I am Shravya Chepa and I am a developer. I graduated as a Bachelor of
@@ -65,7 +63,6 @@ function About() {
       <p>
         Feel free to connect with me <a href="#contact">here!</a>
       </p>
-      <br />
     </div>
   );
 }

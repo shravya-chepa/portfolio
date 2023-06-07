@@ -3,7 +3,6 @@ import "./Projects.scss";
 function Projects() {
   return (
     <div className="projects-section" id="projects">
-      <br />
       <div className="projects-main">
         <h1 className="cursive">Projects</h1>
         <ul className="projects-list">
@@ -94,20 +93,19 @@ function Projects() {
           >
             Joke teller
           </a>
-
-          <a
-            href="https://shravya-chepa.github.io/pong/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Pong
-          </a>
           <a
             href="https://shravya-chepa.github.io/Learn-CSS-in-a-day/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Learn css in a day
+          </a>
+          <a
+            href="https://shravya-chepa.github.io/pong/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Pong
           </a>
         </div>
       </div>
