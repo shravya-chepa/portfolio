@@ -10,13 +10,16 @@ import travelImg from "../assets/road-trip.png";
 function About() {
   return (
     <div className="about-section" id="about">
+      <br />
+      <br />
       <h1 className="cursive">About</h1>
       <p>
         I am Shravya Chepa and I am a developer. I graduated as a Bachelor of
         Technology in Computer Science in 2022. Over the past year I've worked
         as a Junior Full-stack developer. I've focused on various areas of web
         development including front-end development, back-end development and
-        cloud services.
+        cloud services. Currently I am also exploring machine learning, data
+        science and mobile development.
       </p>
       <p>
         To know more about my skills and activities, check out my{" "}
@@ -53,16 +56,16 @@ function About() {
         style={{ borderRadius: "12px" }}
         src="https://open.spotify.com/embed/track/4OoYfejHABzYe2mG8p5s8b?utm_source=generator"
         width="100%"
-        height="152"
+        height="151"
         allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
-      <br />
-      <br />
+      {/* <br /> */}
       <p>
         Feel free to connect with me <a href="#contact">here!</a>
       </p>
+      <br />
     </div>
   );
 }

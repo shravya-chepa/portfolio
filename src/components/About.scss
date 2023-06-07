@@ -1,5 +1,5 @@
 .about-section {
-  height: 80vh;
+  height: 100vh;
 }
 
 .hobby-section {
@@ -27,13 +27,16 @@
 @media only screen and (max-width: 768px) {
   .about-section {
     h1 {
-      font-size: 34px;
+      font-size: 40px;
+    }
+    p {
+      font-size: 16px;
     }
   }
   .hobby-section {
     display: block;
     p {
-      font-size: 14px;
+      font-size: 16px;
       width: 100%;
       display: block;
     }
