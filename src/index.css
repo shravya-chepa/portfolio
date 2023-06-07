@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000;
+  background-color: #050505;
   color: #fff;
   padding: 2% 20%;
 }
@@ -13,4 +13,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    padding: 2% 10%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 2% 5%;
+  }
 }

@@ -1,0 +1,74 @@
+h1 {
+  display: inline;
+  font-size: 42px;
+}
+
+.home-container {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+
+  .home_intro {
+    margin-top: 10px;
+  }
+
+  .home_intro-name {
+    margin-left: 20px;
+    font-family: "Sacramento", cursive;
+    font-size: 64px;
+    color: #d49813;
+  }
+
+  h4 {
+    margin-top: 15px;
+    color: #8dcbe6;
+  }
+
+  .home_profile-photo {
+    width: 200px;
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .home-container {
+    .home_profile-photo {
+      width: 150px;
+    }
+
+    .home_intro-name {
+      margin-left: 10%;
+      font-size: 2.5rem;
+    }
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home-container {
+    display: block;
+    text-align: center;
+
+    .home_profile-photo {
+      width: 150px;
+    }
+
+    h4 {
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+
+    .home_intro-name {
+      font-size: 40px;
+      margin-left: 2%;
+    }
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
