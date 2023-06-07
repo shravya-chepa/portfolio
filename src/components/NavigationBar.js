@@ -20,7 +20,7 @@ function NavigationBar() {
   return (
     <Navbar expand="md" className="nav-bar">
       <div className="nav-logo-brand">
-        <NavbarBrand className="nav-bar-color" href="/">
+        <NavbarBrand href="/">
           <img src={logo} alt="logo" className="logo" />
         </NavbarBrand>
       </div>

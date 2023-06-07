@@ -1,0 +1,48 @@
+.about-section {
+  height: 80vh;
+}
+
+.hobby-section {
+  display: flex;
+  align-items: center;
+
+  p {
+    display: inline;
+    width: 100%;
+  }
+}
+
+.hobby-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-section {
+    h1 {
+      font-size: 34px;
+    }
+  }
+  .hobby-section {
+    display: block;
+    p {
+      font-size: 14px;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .hobby-items {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
