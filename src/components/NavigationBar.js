@@ -29,12 +29,12 @@ function NavigationBar() {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto nav-bar-items" navbar>
             <NavItem>
-              <NavLink className="nav-bar-color" href="/components/">
+              <NavLink className="nav-bar-color" href="#home">
                 home
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-bar-color" href="/components/">
+              <NavLink className="nav-bar-color" href="#about">
                 about
               </NavLink>
             </NavItem>
