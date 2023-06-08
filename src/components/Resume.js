@@ -15,7 +15,7 @@ function Resume() {
           title="resume"
           src="https://drive.google.com/file/d/1SQFAhS1JIm3BFddJouQcQwUVFjjmbOya/preview"
           width="100%"
-          height="350"
+          height="450"
           allow="autoplay"
         ></iframe>
         <a
@@ -27,6 +27,7 @@ function Resume() {
           download
         </a>
       </div>
+      <br />
     </div>
   );
 }

@@ -43,11 +43,11 @@ function NavigationBar() {
                 projects
               </NavLink>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLink className="nav-bar-color" href="#blog">
                 blog
               </NavLink>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <NavLink className="nav-bar-color" href="#resume">
                 resume

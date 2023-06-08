@@ -57,7 +57,7 @@ function About() {
             style={{ borderRadius: "12px" }}
             src="https://open.spotify.com/embed/track/4OoYfejHABzYe2mG8p5s8b?utm_source=generator"
             width="100%"
-            height="151"
+            height="220"
             allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
@@ -71,11 +71,12 @@ function About() {
           />
         </div>
         <div className="current-location">
+          <h3>Here</h3>
           <iframe
             title="maps"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18319458.902385782!2d58.48517786828938!3d23.680850263016623!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1686209747045!5m2!1sen!2sin"
             width="100%"
-            height="200"
+            height="152"
             style={{ border: 0 }}
             allowfullscreen=""
             loading="lazy"
@@ -84,11 +85,10 @@ function About() {
         </div>
       </div>
 
-      <br />
-
       <p>
         Feel free to connect with me <a href="#contact">here!</a>
       </p>
+      <br />
     </div>
   );
 }

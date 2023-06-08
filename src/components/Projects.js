@@ -3,8 +3,9 @@ import "./Projects.scss";
 function Projects() {
   return (
     <div className="projects-section" id="projects">
+      <h1 className="cursive">Projects</h1>
+
       <div className="projects-main">
-        <h1 className="cursive">Projects</h1>
         <ul className="projects-list">
           <li className="project-item">
             <p>
@@ -109,6 +110,7 @@ function Projects() {
           </a>
         </div>
       </div>
+      <br />
     </div>
   );
 }

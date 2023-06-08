@@ -7,7 +7,7 @@ import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedin,
   faInstagram,
-  faTwitter,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
 function Contact() {
@@ -127,6 +127,17 @@ function Contact() {
         </div>
         <div className="social-media-handles">
           <a
+            href="https://github.com/shravya-chepa"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              style={{ marginRight: 10 }}
+              icon={faGithub}
+              color="#00acee"
+            />
+          </a>
+          <a
             href="https://www.linkedin.com/in/shravya-chepa-7991441b7"
             target="_blank"
             rel="noreferrer"
@@ -146,17 +157,6 @@ function Contact() {
               style={{ marginRight: 10 }}
               icon={faInstagram}
               color="#d62976"
-            />
-          </a>
-          <a
-            href="https://twitter.com/shravya_chepa"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              style={{ marginRight: 10 }}
-              icon={faTwitter}
-              color="#00acee"
             />
           </a>
         </div>

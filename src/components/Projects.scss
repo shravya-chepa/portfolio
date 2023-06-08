@@ -1,21 +1,25 @@
 .projects-section {
-  height: 100vh;
+  height: 100%;
+  margin-bottom: 50px;
   // position: relative;
 }
 
 .projects-main {
-  display: flex;
-
   .project-item {
-    display: flex;
+    display: grid;
+    grid-template-columns: 0.3fr 1.8fr;
 
     p {
-      width: 50%;
+      width: 100%;
     }
 
     p:first-of-type {
       color: #8dcbe6;
     }
+  }
+
+  .projects-list {
+    margin-left: -30px;
   }
 }
 
@@ -48,12 +52,14 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .projects-main {
-    display: block;
-
+  .projects-section {
     h1 {
       font-size: 40px;
     }
+  }
+
+  .projects-main {
+    display: block;
 
     .project-item {
       display: block;
