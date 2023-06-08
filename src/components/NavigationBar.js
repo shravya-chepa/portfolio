@@ -49,7 +49,7 @@ function NavigationBar() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-bar-color" href="/components/">
+              <NavLink className="nav-bar-color" href="#resume">
                 resume
               </NavLink>
             </NavItem>

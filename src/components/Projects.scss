@@ -1,5 +1,6 @@
 .projects-section {
   height: 100vh;
+  // position: relative;
 }
 
 .projects-main {
@@ -21,6 +22,7 @@
 .projects-fun-items {
   display: flex;
   flex-wrap: wrap;
+  // margin-bottom: 10px;
 
   a {
     color: #101010;
@@ -60,5 +62,9 @@
         width: 100%;
       }
     }
+  }
+
+  .projects-fun-items {
+    justify-content: center;
   }
 }
