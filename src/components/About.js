@@ -48,6 +48,7 @@ function About() {
         </div>
       </div>
       <br />
+      <br />
       <div className="currents-embeds">
         <div className="spotify-embed">
           <h3>On repeat</h3>
