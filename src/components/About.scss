@@ -25,6 +25,18 @@
   }
 }
 
+.currents-embeds {
+  display: flex;
+  justify-content: flex-start;
+
+  .current-read {
+    margin-left: 15px;
+    img {
+      width: 100px;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .about-section {
     h1 {

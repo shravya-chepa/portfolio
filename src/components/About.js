@@ -48,18 +48,31 @@ function About() {
         </div>
       </div>
       <br />
-      <h3>On repeat</h3>
-      <iframe
-        title="On repeat"
-        style={{ borderRadius: "12px" }}
-        src="https://open.spotify.com/embed/track/4OoYfejHABzYe2mG8p5s8b?utm_source=generator"
-        width="100%"
-        height="151"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-      {/* <br /> */}
+      <div className="currents-embeds">
+        <div className="spotify-embed">
+          <h3>On repeat</h3>
+          <iframe
+            title="On repeat"
+            style={{ borderRadius: "12px" }}
+            src="https://open.spotify.com/embed/track/4OoYfejHABzYe2mG8p5s8b?utm_source=generator"
+            width="100%"
+            height="151"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div className="current-read">
+          <h3>Reading</h3>
+          <img
+            src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1555447414i/44767458.jpg"
+            alt="current-book"
+          />
+        </div>
+      </div>
+
+      <br />
+
       <p>
         Feel free to connect with me <a href="#contact">here!</a>
       </p>
