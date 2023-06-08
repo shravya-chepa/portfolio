@@ -10,20 +10,31 @@
     list-style: none;
   }
 
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    background-color: #101010;
+    color: #ffffff;
+    border: solid #000000 1px;
+    outline: none;
+  }
+
+  input[type="submit"] {
+    background-color: #8dcbe6;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bolder;
+  }
+
   .sender-details {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    input {
-      width: 100%;
-    }
   }
 
   .message-details {
-    input {
-      width: 100%;
-    }
-
     textarea {
       width: 100%;
     }

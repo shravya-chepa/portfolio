@@ -64,7 +64,7 @@ function Contact() {
                 <input
                   type="text"
                   name="from_name"
-                  placeholder="Name"
+                  placeholder="name"
                   onChange={handleChange}
                   value={toSend.from_name}
                   required
@@ -74,7 +74,7 @@ function Contact() {
                 <input
                   type="email"
                   name="from_email"
-                  placeholder="Email"
+                  placeholder="email"
                   value={toSend.from_email}
                   onChange={handleChange}
                   required
@@ -86,7 +86,7 @@ function Contact() {
                 <input
                   type="text"
                   name="subject"
-                  placeholder="Subject"
+                  placeholder="subject"
                   value={toSend.subject}
                   onChange={handleChange}
                   required
@@ -94,7 +94,7 @@ function Contact() {
               </li>
               <li>
                 <textarea
-                  placeholder="Message"
+                  placeholder="message"
                   name="message"
                   value={toSend.message}
                   onChange={handleChange}
@@ -114,14 +114,14 @@ function Contact() {
           <FontAwesomeIcon
             style={{ marginRight: 10 }}
             icon={faLocationDot}
-            color="#fff"
+            color="#d49813"
           />
           <span> Hyderabad, India</span>
           <br />
           <FontAwesomeIcon
             icon={faEnvelope}
             style={{ marginRight: 4 }}
-            color="#fff"
+            color="#d49813"
           />
           <span> shravya.chepa@gmail.com</span>
         </div>
