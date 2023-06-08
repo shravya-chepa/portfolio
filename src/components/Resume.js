@@ -7,7 +7,7 @@ function Resume() {
       <div className="download-section">
         <p>
           If you have an interesting project and think I would be a good fit to
-          contribute, let's get started!
+          contribute, let's collaborate!
         </p>
 
         <iframe

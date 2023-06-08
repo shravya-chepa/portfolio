@@ -1,6 +1,10 @@
 .about-section {
   height: 100vh;
   // overflow: hidden;
+
+  h3 {
+    color: #8dcbe6;
+  }
 }
 
 .hobby-section {
@@ -27,13 +31,18 @@
 
 .currents-embeds {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  overflow: hidden;
 
   .current-read {
     margin-left: 15px;
     img {
       width: 100px;
     }
+  }
+
+  .current-location {
+    margin-left: 15px;
   }
 }
 
