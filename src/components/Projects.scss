@@ -35,6 +35,10 @@
     background-color: #8dcbe6;
     font-weight: bolder;
     margin: 5px;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }
 

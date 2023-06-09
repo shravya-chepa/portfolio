@@ -4,7 +4,7 @@ import profile from "../assets/profile_photo.png";
 
 function Home() {
   return (
-    <div className="home-container" id="home">
+    <div className="home-container">
       <div className="astronaut-dog">
         <img src={astronautDog} alt="astro-dog" />
       </div>

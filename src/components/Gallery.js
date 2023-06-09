@@ -1,3 +1,11 @@
+import { useState } from "react";
+import {
+  CarouselControl,
+  Carousel,
+  CarouselItem,
+  CarouselIndicators,
+} from "reactstrap";
+
 import "./Gallery.scss";
 import photo1 from "../assets/photo1.jpg";
 import photo2 from "../assets/photo2.jpg";
@@ -12,27 +20,135 @@ import photo10 from "../assets/photo10.jpg";
 import photo11 from "../assets/photo11.jpg";
 import photo12 from "../assets/photo12.jpg";
 
+// import PhotoCarousel from "./PhotoCarousel";
+
 function Gallery() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  // State for Animation
+  const [animating, setAnimating] = useState(false);
+
+  // Sample items for Carousel
+  const items = [
+    {
+      src: photo1,
+      altText: "beach-1",
+    },
+    {
+      src: photo2,
+      altText: "puppy",
+    },
+    {
+      src: photo3,
+      altText: "desk-setup1",
+    },
+    {
+      src: photo4,
+      altText: "flowers",
+    },
+    {
+      src: photo5,
+      altText: "waterfall",
+    },
+    {
+      src: photo6,
+      altText: "shore",
+    },
+    {
+      src: photo7,
+      altText: "cat",
+    },
+    {
+      src: photo8,
+      altText: "desk-setup2",
+    },
+    {
+      src: photo9,
+      altText: "church",
+    },
+    {
+      src: photo10,
+      altText: "desk-setup3",
+    },
+    {
+      src: photo11,
+      altText: "mountain-sky",
+    },
+    {
+      src: photo12,
+      altText: "beach2",
+    },
+  ];
+
+  // Items array length
+  const itemLength = items.length - 1;
+
+  // Previous button for Carousel
+  const previousButton = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === 0 ? itemLength : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  };
+
+  // Next button for Carousel
+  const nextButton = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === itemLength ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  };
+
+  // Carousel Item Data
+  const carouselItemData = items.map((item) => {
+    return (
+      <CarouselItem
+        className="photo-item"
+        key={item.src}
+        onExited={() => setAnimating(false)}
+        onExiting={() => setAnimating(true)}
+      >
+        <img src={item.src} alt={item.altText} />
+      </CarouselItem>
+    );
+  });
   return (
     <div className="gallery-section" id="gallery">
       <h1 className="cursive">Gallery</h1>
 
-      <div className="photos">
-        <img src={photo1} alt="beach-1" />
-        <img src={photo2} alt="puppy" />
-        <img src={photo3} alt="desk-setup1" />
-        <img src={photo4} alt="flowers" />
-        <img src={photo5} alt="waterfall" />
-        <img src={photo6} alt="shore" />
-        <img src={photo7} alt="cat" />
-        <img src={photo8} alt="desk-setup2" />
-        <img src={photo9} alt="church" />
-        <img src={photo10} alt="desk-setup3" />
-        <img src={photo11} alt="mountain-sky" />
-        <img src={photo12} alt="beach-2" />
-        <div></div>
-        <div></div>
-        <div></div>
+      {/* <PhotoCarousel /> */}
+      <div className="photos-section">
+        <div
+          className="photo-carousel"
+          style={{
+            display: "block",
+            width: 400,
+          }}
+        >
+          <Carousel
+            previous={previousButton}
+            next={nextButton}
+            activeIndex={activeIndex}
+          >
+            <CarouselIndicators
+              items={items}
+              activeIndex={activeIndex}
+              onClickHandler={(newIndex) => {
+                if (animating) return;
+                setActiveIndex(newIndex);
+              }}
+            />
+            {carouselItemData}
+            <CarouselControl
+              directionText="Prev"
+              direction="prev"
+              onClickHandler={previousButton}
+            />
+            <CarouselControl
+              directionText="Next"
+              direction="next"
+              onClickHandler={nextButton}
+            />
+          </Carousel>
+        </div>
       </div>
     </div>
   );

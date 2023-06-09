@@ -3,43 +3,21 @@
   margin-bottom: 150px;
 }
 
-.photos {
+.photos-section {
+  margin-top: 30px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 50px;
-
-  img {
-    width: 130px;
-    height: 170px;
-    margin: 3px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    border: solid #8dcbe6 2px;
-  }
-
-  div {
-    width: 130px;
-    height: auto;
-    margin: 5px;
-  }
+  justify-content: center;
+  border: solid #8dcbe6 2px;
+}
+.photo-item img {
+  width: 400px;
+  height: 500px;
 }
 
 @media only screen and (max-width: 768px) {
   .gallery-section {
     h1 {
       font-size: 40px;
-    }
-  }
-  .photos {
-    img {
-      margin: 10px;
-      width: 100px;
-      height: 140px;
-    }
-
-    div {
-      width: 100px;
     }
   }
 }

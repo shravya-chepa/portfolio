@@ -19,7 +19,7 @@ function NavigationBar() {
   };
   return (
     <Navbar expand="md" className="nav-bar">
-      <div className="nav-logo-brand" id="home-section">
+      <div className="nav-logo-brand" id="home">
         <NavbarBrand href="/">
           <img src={logo} alt="logo" className="logo" />
         </NavbarBrand>
@@ -29,7 +29,7 @@ function NavigationBar() {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto nav-bar-items" navbar>
             <NavItem>
-              <NavLink className="nav-bar-color" href="#home-section">
+              <NavLink className="nav-bar-color" href="#home">
                 home
               </NavLink>
             </NavItem>

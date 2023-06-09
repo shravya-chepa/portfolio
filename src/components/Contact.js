@@ -17,7 +17,7 @@ function Contact() {
     subject: "",
     message: "",
   });
-
+  const [sent, setSent] = useState(false);
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
     console.log("to send: ", toSend);
@@ -40,12 +40,23 @@ function Contact() {
       )
       .then(
         () => {
-          alert("Message sent successfully");
-          window.location.reload(false);
+          // alert("Message sent successfully");
+          // window.location.reload(false);
+          setSent(true);
+          setToSend({
+            from_name: "",
+            from_email: "",
+            subject: "",
+            message: "",
+          });
+          setTimeout(() => {
+            setSent(false);
+          }, 3000);
         },
         (error) => {
           console.log("Error: ", error);
-          alert("Failed sending message, please try again");
+          // alert("Failed sending message, please try again");
+          setSent(false);
         }
       );
   };
@@ -104,7 +115,11 @@ function Contact() {
             </div>
 
             <li>
-              <input type="submit" className="flat-button" value="SEND" />
+              <input
+                type="submit"
+                className="flat-button"
+                value={sent ? "MESSAGE SENT" : "SEND"}
+              />
             </li>
           </ul>
         </form>
