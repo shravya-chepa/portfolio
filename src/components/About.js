@@ -34,7 +34,7 @@ function About() {
       </div>
       <div className="currents-embeds">
         <div className="spotify-embed">
-          <h3>On repeat</h3>
+          <h5>On repeat</h5>
           <iframe
             title="On repeat"
             style={{ borderRadius: "12px" }}
@@ -47,14 +47,14 @@ function About() {
           ></iframe>
         </div>
         <div className="current-read">
-          <h3>Reading</h3>
+          <h5>Reading</h5>
           <img
             src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1555447414i/44767458.jpg"
             alt="current-book"
           />
         </div>
         <div className="current-location">
-          <h3>Here</h3>
+          <h5>Here</h5>
           <iframe
             title="maps"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18319458.902385782!2d58.48517786828938!3d23.680850263016623!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1686209747045!5m2!1sen!2sin"

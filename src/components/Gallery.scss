@@ -1,6 +1,7 @@
 .gallery-section {
   height: 100%;
   margin-bottom: 150px;
+  overflow-x: hidden;
 }
 
 .photos-section {
@@ -10,8 +11,8 @@
   border: solid #8dcbe6 2px;
 }
 .photo-item img {
-  width: 400px;
-  height: 500px;
+  width: 380px;
+  height: 480px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -19,5 +20,9 @@
     h1 {
       font-size: 40px;
     }
+  }
+
+  .photos-section {
+    border: none;
   }
 }

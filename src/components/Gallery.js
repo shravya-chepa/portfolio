@@ -120,7 +120,7 @@ function Gallery() {
           className="photo-carousel"
           style={{
             display: "block",
-            width: 400,
+            width: 380,
           }}
         >
           <Carousel

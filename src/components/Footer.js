@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="footer-section">
       <div className="attributes">
-        <a href="https://www.flaticon.com/free-icons/" title="icons">
+        <a href="https://www.flaticon.com" title="icons">
           Icons created by Freepik, bukeicon, Pixel perfect, Uniconlabs -
           Flaticon
         </a>
