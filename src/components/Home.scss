@@ -13,6 +13,20 @@ h1 {
     margin-top: 10px;
   }
 
+  .salutation {
+    animation: bounce;
+    animation-duration: 2s;
+  }
+
+  .self-intro {
+    animation: fadeIn;
+    animation-duration: 5s;
+  }
+  .role-intro {
+    animation: slideInRight;
+    animation-duration: 3s;
+  }
+
   .home_intro-name {
     margin-left: 20px;
   }
@@ -21,6 +35,11 @@ h1 {
     margin-top: 15px;
     color: #8dcbe6;
     background-color: #000000;
+  }
+
+  .profile-cartoon {
+    animation: fadeIn;
+    animation-duration: 3s;
   }
 
   .home_profile-photo {
@@ -54,6 +73,10 @@ h1 {
 
     .home_profile-photo {
       width: 150px;
+    }
+
+    h1 {
+      font-size: 30px;
     }
 
     h4 {
@@ -91,7 +114,7 @@ h1 {
 }
 
 .astronaut-dog {
-  animation: fly 40s linear infinite;
+  animation: fly 50s linear infinite;
   top: 0;
   left: 0;
   position: fixed;

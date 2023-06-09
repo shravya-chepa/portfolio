@@ -10,14 +10,22 @@ function Home() {
       </div>
 
       <div className="home_intro">
-        <h1>Hello, </h1>
+        <div className="salutation">
+          <h1>Hello, </h1>
+        </div>
         <br />
-        <h1>I am</h1>
-        <h1 class="home_intro-name cursive">Shravya</h1>
-        <h4>A developer</h4>
-      </div>
+        <div className="self-intro">
+          <h1>I am</h1>
+          <h1 class="home_intro-name cursive">Shravya</h1>
+        </div>
 
-      <img src={profile} alt="profile" className="home_profile-photo" />
+        <div className="role-intro">
+          <h4>A developer</h4>
+        </div>
+      </div>
+      <div className="profile-cartoon">
+        <img src={profile} alt="profile" className="home_profile-photo" />
+      </div>
     </div>
   );
 }

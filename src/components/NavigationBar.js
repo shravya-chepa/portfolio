@@ -20,7 +20,7 @@ function NavigationBar() {
   return (
     <Navbar expand="md" className="nav-bar">
       <div className="nav-logo-brand" id="home-section">
-        <NavbarBrand href="#home-section">
+        <NavbarBrand href="/">
           <img src={logo} alt="logo" className="logo" />
         </NavbarBrand>
       </div>
@@ -53,11 +53,7 @@ function NavigationBar() {
                 blog
               </NavLink>
             </NavItem> */}
-            <NavItem>
-              <NavLink className="nav-bar-color" href="#resume">
-                resume
-              </NavLink>
-            </NavItem>
+
             <NavItem>
               <NavLink className="nav-bar-color" href="#contact">
                 contact

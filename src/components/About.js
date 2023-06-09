@@ -20,22 +20,6 @@ function About() {
         cloud services. Currently I am also exploring machine learning, data
         science and mobile development.
       </p>
-      <p>
-        To know more about my skills and activities, check out my{" "}
-        <a href="#resume" className="resume-link">
-          resume
-        </a>{" "}
-        or{" "}
-        <a
-          className="linkedin-link"
-          href="https://www.linkedin.com/in/shravya-chepa-7991441b7/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
-        .
-      </p>
 
       <div className="hobby-section">
         <p>I enjoy... </p>
@@ -48,8 +32,6 @@ function About() {
           <img src={travelImg} alt="road-trips" />
         </div>
       </div>
-      <br />
-      <br />
       <div className="currents-embeds">
         <div className="spotify-embed">
           <h3>On repeat</h3>
@@ -85,7 +67,27 @@ function About() {
           ></iframe>
         </div>
       </div>
-
+      <p className="resume-section">
+        To know more about my skills and activities, check out my{" "}
+        <a
+          className="linkedin-link"
+          href="https://www.linkedin.com/in/shravya-chepa-7991441b7/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn{" "}
+        </a>
+        or{" "}
+        <a
+          href="https://drive.google.com/uc?/export=download&id=1SQFAhS1JIm3BFddJouQcQwUVFjjmbOya"
+          className="resume-link"
+          download="shravya_chepa_resume"
+          target="_blank"
+          rel="noreferrer"
+        >
+          resume
+        </a>
+      </p>
       <br />
     </div>
   );

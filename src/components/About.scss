@@ -1,6 +1,6 @@
 .about-section {
   height: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
   // overflow: hidden;
 
   h3 {
@@ -11,6 +11,7 @@
 .hobby-section {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 
   p {
     display: inline;
@@ -34,6 +35,7 @@
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  margin-bottom: -30px;
 
   .current-read {
     margin-left: 15px;
@@ -49,6 +51,14 @@
     iframe {
       border-radius: 12px;
     }
+  }
+}
+
+.resume-section {
+  .resume-link {
+    background-color: #8dcbe6;
+    color: #000000;
+    padding: 4px 10px;
   }
 }
 
