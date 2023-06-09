@@ -87,30 +87,3 @@
     }
   }
 }
-
-// animation
-
-@keyframes fly {
-  0% {
-    transform: translate(0, 110vh);
-  }
-  50% {
-    transform: translate(110vw, 0);
-  }
-  100% {
-    transform: translate(0, 110vh);
-  }
-}
-
-.astronaut-dog {
-  animation: fly 40s linear infinite;
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: 999;
-  pointer-events: none;
-
-  img {
-    width: 40%;
-  }
-}

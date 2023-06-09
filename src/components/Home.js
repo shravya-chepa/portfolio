@@ -1,9 +1,14 @@
 import "./Home.scss";
+import astronautDog from "../assets/astro-dog.png";
 import profile from "../assets/profile_photo.png";
 
 function Home() {
   return (
     <div className="home-container" id="home">
+      <div className="astronaut-dog">
+        <img src={astronautDog} alt="astro-dog" />
+      </div>
+
       <div className="home_intro">
         <h1>Hello, </h1>
         <br />

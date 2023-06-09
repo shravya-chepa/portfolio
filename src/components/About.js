@@ -6,15 +6,12 @@ import filmSlateImg from "../assets/film-slate.png";
 import musicImg from "../assets/music.png";
 import cameraImg from "../assets/camera.png";
 import travelImg from "../assets/road-trip.png";
-import astronautDog from "../assets/astro-dog.png";
 
 function About() {
   return (
     <div className="about-section" id="about">
       <h1 className="cursive">About</h1>
-      <div className="astronaut-dog">
-        <img src={astronautDog} alt="astro-dog" />
-      </div>
+
       <p>
         I am Shravya Chepa and I am a developer. I graduated as a Bachelor of
         Technology in Computer Science in 2022. Over the past year I've worked
