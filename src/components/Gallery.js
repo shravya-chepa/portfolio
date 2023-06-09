@@ -1,0 +1,41 @@
+import "./Gallery.scss";
+import photo1 from "../assets/photo1.jpg";
+import photo2 from "../assets/photo2.jpg";
+import photo3 from "../assets/photo3.jpg";
+import photo4 from "../assets/photo4.jpg";
+import photo5 from "../assets/photo5.jpg";
+import photo6 from "../assets/photo6.jpg";
+import photo7 from "../assets/photo7.jpg";
+import photo8 from "../assets/photo8.jpg";
+import photo9 from "../assets/photo9.jpg";
+import photo10 from "../assets/photo10.jpg";
+import photo11 from "../assets/photo11.jpg";
+import photo12 from "../assets/photo12.jpg";
+
+function Gallery() {
+  return (
+    <div className="gallery-section" id="gallery">
+      <h1 className="cursive">Gallery</h1>
+
+      <div className="photos">
+        <img src={photo1} />
+        <img src={photo2} />
+        <img src={photo3} />
+        <img src={photo4} />
+        <img src={photo5} />
+        <img src={photo6} />
+        <img src={photo7} />
+        <img src={photo8} />
+        <img src={photo9} />
+        <img src={photo10} />
+        <img src={photo11} />
+        <img src={photo12} />
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  );
+}
+
+export default Gallery;
