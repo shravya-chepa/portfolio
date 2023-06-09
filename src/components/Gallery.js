@@ -18,18 +18,18 @@ function Gallery() {
       <h1 className="cursive">Gallery</h1>
 
       <div className="photos">
-        <img src={photo1} />
-        <img src={photo2} />
-        <img src={photo3} />
-        <img src={photo4} />
-        <img src={photo5} />
-        <img src={photo6} />
-        <img src={photo7} />
-        <img src={photo8} />
-        <img src={photo9} />
-        <img src={photo10} />
-        <img src={photo11} />
-        <img src={photo12} />
+        <img src={photo1} alt="beach-1" />
+        <img src={photo2} alt="puppy" />
+        <img src={photo3} alt="desk-setup1" />
+        <img src={photo4} alt="flowers" />
+        <img src={photo5} alt="waterfall" />
+        <img src={photo6} alt="shore" />
+        <img src={photo7} alt="cat" />
+        <img src={photo8} alt="desk-setup2" />
+        <img src={photo9} alt="church" />
+        <img src={photo10} alt="desk-setup3" />
+        <img src={photo11} alt="mountain-sky" />
+        <img src={photo12} alt="beach-2" />
         <div></div>
         <div></div>
         <div></div>

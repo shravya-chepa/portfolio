@@ -85,9 +85,6 @@ function About() {
         </div>
       </div>
 
-      <p>
-        Feel free to connect with me <a href="#contact">here!</a>
-      </p>
       <br />
     </div>
   );
