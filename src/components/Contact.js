@@ -64,8 +64,7 @@ function Contact() {
     <div id="contact" className="contact-section">
       <h1 className="cursive">Contact</h1>
       <p>
-        I am interested to collaborate and work on amazing projects. Feel free
-        to drop me a message or just say hi!
+        Feel free to drop me a message if you think I would be a good fit to contribute to your interesting project, or just say hi!
       </p>
       <div id="contact-form">
         <form onSubmit={sendEmail}>
