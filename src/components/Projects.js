@@ -21,7 +21,7 @@ function Projects() {
               A tool to assist users with writing. It has features that can
               convert speech to text, provide analytics, suggest synonyms and
               antonyms, help find meanings of words, spell check among many
-              others.
+              others. Check it out <a href="https://shravyachepa-textanalyzer-streamlit-app-ied54z.streamlit.app/">here</a>
             </p>
           </li>
           <li className="project-item">
@@ -52,6 +52,13 @@ function Projects() {
           <p>Here are some fun projects I worked on while learning to code!</p>
         </div>
         <div className="projects-fun-items">
+        <a
+            href="https://shravya-chepa.github.io/infinite-scroll/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Infinite scroll
+          </a>
           <a
             href="https://shravya-pwdgen.netlify.app"
             target="_blank"
@@ -81,32 +88,11 @@ function Projects() {
             Quotegen
           </a>
           <a
-            href="https://shravya-chepa.github.io/infinite-scroll/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Infinite scroll
-          </a>
-          <a
-            href="https://shravya-chepa.github.io/joke-teller/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Joke teller
-          </a>
-          <a
             href="https://shravya-chepa.github.io/Learn-CSS-in-a-day/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Learn css in a day
-          </a>
-          <a
-            href="https://shravya-chepa.github.io/pong/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Pong
           </a>
         </div>
       </div>
