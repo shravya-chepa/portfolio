@@ -13,16 +13,15 @@ function About() {
       <h1 className="cursive">About</h1>
 
       <p>
-        I am Shravya Chepa and I am a developer. I graduated as a Bachelor of
-        Technology in Computer Science in 2022. Over the past year I've worked
-        as a Junior Full-stack developer. I've focused on various areas of web
-        development including front-end development, back-end development and
-        cloud services. Currently I am also exploring machine learning, data
-        science and mobile development.
+        I am Shravya Chepa and I am a developer. I am a Master's student in
+        Computer Science at San Diego State University. I worked in a start-up
+        as a Junior Full-stack developer in Bengaluru, India. I've focused on
+        various areas of web development including front-end development,
+        back-end development and cloud services. Currently I am also exploring
+        machine learning, data science and mobile development.
       </p>
 
       <div className="hobby-section">
-        <p>I enjoy... </p>
         <div className="hobby-items">
           <img src={codeImg} alt="code" />
           <img src={bookImg} alt="books" />
@@ -57,7 +56,7 @@ function About() {
           <span>Here</span>
           <iframe
             title="maps"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18319458.902385782!2d58.48517786828938!3d23.680850263016623!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1686209747045!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429158.12591886224!2d-117.43861503117581!3d32.82412055814722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%20CA!5e0!3m2!1sen!2sus!4v1701985259192!5m2!1sen!2sus"
             width="100%"
             height="152"
             style={{ border: 0 }}
