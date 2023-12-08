@@ -78,7 +78,7 @@ function About() {
         </a>
         or{" "}
         <a
-          href="https://drive.google.com/uc?/export=download&id=1SQFAhS1JIm3BFddJouQcQwUVFjjmbOya"
+          href="https://drive.google.com/file/d/1YTIrSv7ZlsFv3sR_yRrNTLF7ZLCM87wm/view?usp=sharing"
           className="resume-link"
           download="shravya_chepa_resume"
           target="_blank"
