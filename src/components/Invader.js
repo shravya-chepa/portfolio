@@ -45,7 +45,7 @@ const SpaceInvader = () => {
 
           this.position = {
             x: canvas.width / 2 - this.width / 2,
-            y: canvas.height - this.height - 40,
+            y: canvas.height - this.height - 100,
           };
         };
       }
