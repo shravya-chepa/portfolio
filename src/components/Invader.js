@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 import { useNavigate } from 'react-router-dom';
 import "./Invader.scss";
 import spacecraftImage from "../assets/spacecraft.png";
@@ -9,9 +9,9 @@ const SpaceInvader = () => {
   const [score, setScore] = useState(0);
 
   const navigate = useNavigate();
-  const handleExit = () => {
+  const handleExit = useCallback(() => {
     navigate('/');
-  };
+  }, [navigate]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -578,7 +578,7 @@ const SpaceInvader = () => {
       window.removeEventListener("touchend", handleTouchEnd);
       game.active = false;
     };
-  }, []); // Empty dependency array since we only want to run this once
+  }, [handleExit]); 
 
   return (
     <div className="space-invader">
