@@ -1,6 +1,12 @@
 import "./Projects.scss";
+import { useNavigate } from 'react-router-dom';
 
 function Projects() {
+  const navigate = useNavigate();
+
+  const handlePlayGame = () => {
+    navigate('/game'); 
+  }
   return (
     <div className="projects-section" id="projects">
       <h1 className="cursive">Projects</h1>
@@ -97,6 +103,7 @@ function Projects() {
         </div>
       </div>
       <br />
+      <button onClick={handlePlayGame} className="play-spaceinvaders">Play SpaceInvaders</button>
     </div>
   );
 }

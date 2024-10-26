@@ -1,18 +1,18 @@
 import "./App.scss";
 import "animate.css";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavigationBar from "./components/NavigationBar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
-// import Blog from "./components/Blog";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import SpaceInvader from "./components/Invader";
 
-function App() {
+function MainContent() {
   return (
-    <div className="App">
+    <>
       <div className="home">
         <NavigationBar />
         <br />
@@ -21,10 +21,22 @@ function App() {
       <About />
       <Projects />
       <Gallery />
-      {/* <Blog /> */}
       <Contact />
       <Footer />
-    </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<MainContent />} />
+          <Route path="/game" element={<SpaceInvader />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

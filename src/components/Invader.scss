@@ -1,0 +1,50 @@
+.space-invader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .game-overlay {
+      position: absolute; // Changed to absolute to position it relative to the .space-invader
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      z-index: 1; // Keep the z-index to ensure it's on top
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+  
+      .score {
+        color: white;
+        font-size: 24px;
+      }
+  
+      .exit-button {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        border: 1px solid white;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
+  }
+  
