@@ -9,6 +9,7 @@ import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SpaceInvader from "./components/Invader";
+import Skills from "./components/Skills";
 
 function MainContent() {
   return (
@@ -20,6 +21,7 @@ function MainContent() {
       </div>
       <About />
       <Projects />
+      <Skills />
       <Gallery />
       <Contact />
       <Footer />
