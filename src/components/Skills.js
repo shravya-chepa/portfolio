@@ -54,22 +54,39 @@ const Skills = () => {
     scene.add(sphere);
 
     // Lighting
-    const ambientLight = new THREE.AmbientLight(0x333333, 7);
+    const ambientLight = new THREE.AmbientLight(0x333333, 40);
     scene.add(ambientLight);
 
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5); // Weaken the light intensity
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
     directionalLight.position.set(5, 3, 5);
     scene.add(directionalLight);
+
+    const applyComicStyle = (canvas, context, labelText) => {
+      context.fillStyle = "#ffcccb"; // Light red background
+      context.fillRect(0, 0, canvas.width, canvas.height);
+    
+      context.font = "bold 28px 'Comic Sans MS', cursive";
+      context.textAlign = "center";
+      context.textBaseline = "middle";
+      context.fillStyle = "#000000"; // Black text
+      context.strokeStyle = "#ffffff"; // White outline
+      context.lineWidth = 2;
+      context.strokeText(labelText, canvas.width / 2, canvas.height / 2); // Text stroke
+      context.fillText(labelText, canvas.width / 2, canvas.height / 2); // Text fill
+    };
+    
 
     // Function to create skill labels
     const createSkillLabel = (text) => {
       const canvas = document.createElement("canvas");
       const context = canvas.getContext("2d");
-      canvas.width = 256;
+      canvas.width = 256; 
       canvas.height = 64;
 
+      // applyComicStyle(canvas, context,text);
+
       context.fillStyle = "#8dcbe6";
-      context.font = "30px Arial";
+      context.font = "bold 40px Arial";
       context.textAlign = "center";
       context.fillText(text, canvas.width / 2, canvas.height / 2);
 
@@ -128,12 +145,43 @@ const Skills = () => {
 
     const stars = createDistantStars();
 
+    // Create satellite
+    const createSatellite = () => {
+      const satellite = new THREE.Group();
+
+      const bodyGeometry = new THREE.CylinderGeometry(4, 4, 15, 52);
+      const bodyMaterial = new THREE.MeshStandardMaterial({ color: 0xd49813 });
+      const body = new THREE.Mesh(bodyGeometry, bodyMaterial);
+
+      // Solar panels
+      const panelGeometry = new THREE.BoxGeometry(8, 0.5, 0.1);
+      const panelMaterial = new THREE.MeshStandardMaterial({ color: 0xfefefe });
+      const leftPanel = new THREE.Mesh(panelGeometry, panelMaterial);
+      const rightPanel = new THREE.Mesh(panelGeometry, panelMaterial);
+      leftPanel.position.set(-6, 0, 0);
+      rightPanel.position.set(6, 0, 0);
+
+      body.add(leftPanel, rightPanel);
+      satellite.add(body);
+
+      // Set initial orbit position
+      satellite.position.set(sphereRadius + 100, 0, 0);
+      sphere.add(satellite);
+
+      return satellite;
+    };
+
+    const satellite = createSatellite();
+
     // Animation
     camera.position.z = 500;
-    
+
     const animate = () => {
       const animationId = requestAnimationFrame(animate);
       sphere.rotation.y += 0.0015;
+      sphere.rotation.x += 0.0008
+      satellite.rotation.y += 0.01; // Rotate the satellite around its axis
+      satellite.position.applyAxisAngle(new THREE.Vector3(0, 1, 0), 0.005); // Move it in orbit
       controls.update();
       renderer.render(scene, camera);
       return animationId;
@@ -188,7 +236,7 @@ const Skills = () => {
   return (
     <div className='skills-section'>
         <h1 className='cursive'>Skills</h1>
-        <div ref={mountRef} style={{ width: '100%', height: '80vh' }} />
+        <div ref={mountRef} style={{ width: '100%', height: '70vh' }} />
     </div>
   );
 };
