@@ -190,7 +190,7 @@
     .timeline-container {
         width: 100%;
         padding-left: 40px;
-        padding-right: 30px;
+        padding-right: 0;
     }
 
     .timeline-container.right {
@@ -224,7 +224,7 @@
 
     .timeline-container.left .content,
     .timeline-container.right .content {
-        padding: 30px 30px 30px 60px;
+        padding: 30px 0 30px 40px;
         border-radius: 50px 0 0 50px;
     }
 }
