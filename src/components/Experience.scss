@@ -1,0 +1,230 @@
+.experience-section {
+    margin-bottom: 150px;
+}
+
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: #d49813;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-container {
+    padding: 15px 30px;
+    position: relative;
+    background: inherit;
+    width: 50%;
+}
+
+.timeline-container.left {
+    left: 0;
+}
+
+.timeline-container.right {
+    left: 50%;
+}
+
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: calc(50% - 8px);
+    right: -8px;
+    background: #ffffff;
+    border: 2px solid #d49813;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.timeline-container.right::after {
+    left: -8px;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: calc(50% - 1px);
+    right: 8px;
+    background: #d49813;
+    z-index: 1;
+}
+
+.timeline-container.right::before {
+    left: 8px;
+}
+
+.timeline-container .date {
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 8px);
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #d49813;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.timeline-container.left .date {
+    right: -90px;
+}
+
+.timeline-container.right .date {
+    left: -90px;
+}
+
+.timeline-container .icon {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 9px 0;
+    top: calc(50% - 10px);
+    background: #8dcbe6;
+    border: 2px solid #d49813;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #d49813;
+    z-index: 1;
+}
+
+
+.timeline-container.left .icon {
+    right: 56px;
+}
+
+.timeline-container.right .icon {
+    left: 56px;
+}
+
+.timeline-container .content {
+    padding: 20px 70px 20px 20px;
+    background: #8dcbe6;
+    position: relative;
+    border-radius: 0 500px 500px 0;
+}
+
+.timeline-container.right .content {
+    padding: 20px 20px 20px 70px;
+    border-radius: 500px 0 0 500px;
+}
+
+.timeline-container .content h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.timeline-container .content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+}
+
+
+.timeline-container .rocket {
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.timeline-container .rocket {
+    width: 60px;
+    height: auto;
+    animation: rocket-fly 2s ease-in-out infinite;
+}
+
+@keyframes rocket-fly {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) translateY(-15px);
+    }
+}
+
+
+
+
+@media (max-width: 767.98px) {
+    .experience-section h1 {
+        font-size: 40px;
+    }
+
+    .timeline-container .rocket {
+        left: 20px;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    .timeline::after {
+        left: 20px;
+    }
+
+    .timeline-container {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 30px;
+    }
+
+    .timeline-container.right {
+        left: 0%;
+    }
+
+    .timeline-container.left::after,
+    .timeline-container.right::after {
+        left: 12px;
+    }
+
+    .timeline-container.left::before,
+    .timeline-container.right::before {
+        left: 30px;
+        border-color: transparent #d49813 transparent transparent;
+        width: 30px;
+    }
+
+    .timeline-container.left .date,
+    .timeline-container.right .date {
+        right: 40px;
+        font-size: 10px;
+        top: 0px;
+    }
+
+    .timeline-container.left .icon,
+    .timeline-container.right .icon {
+        right: auto;
+        left: 56px;
+    }
+
+    .timeline-container.left .content,
+    .timeline-container.right .content {
+        padding: 30px 30px 30px 60px;
+        border-radius: 50px 0 0 50px;
+    }
+}

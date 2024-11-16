@@ -16,7 +16,7 @@ function Home() {
         <br />
         <div className="self-intro">
           <h1>I am</h1>
-          <h1 class="home_intro-name cursive">Shravya</h1>
+          <h1 className="home_intro-name cursive">Shravya</h1>
         </div>
 
         <div className="role-intro">

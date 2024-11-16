@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SpaceInvader from "./components/Invader";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 
 function MainContent() {
   return (
@@ -22,6 +23,7 @@ function MainContent() {
       <About />
       <Projects />
       <Skills />
+      <Experience />
       <Gallery />
       <Contact />
       <Footer />
