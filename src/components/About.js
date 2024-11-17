@@ -6,22 +6,28 @@ import filmSlateImg from "../assets/film-slate.png";
 import musicImg from "../assets/music.png";
 import cameraImg from "../assets/camera.png";
 import travelImg from "../assets/road-trip.png";
+import profilePhoto from "../assets/shravya-chepa.jpg"
 
 function About() {
   return (
     <div className="about-section" id="about">
       <h1 className="cursive">About</h1>
+      <div className="about-content">
+        <div className="about-profile-photo">
+          <img src={profilePhoto} alt="Shravya writing on a whiteboard" className="about-photo"/>
+        </div>
+        <div className="about-text">
+          <p>
+            Hello! I’m Shravya Chepa, a passionate and driven Software Developer pursuing Master’s in Computer Science at San Diego State University. My journey in technology is fueled by curiosity and a love for solving complex problems. With hands-on experience in full-stack development, machine learning, and cloud technologies, I strive to create innovative solutions that make a meaningful impact.
+          </p>
+          <p>
+            My professional experience spans diverse roles, including enhancing web accessibility for academic institutions, crafting personalized career guidance platforms, engineering microservices to automate athlete performance analysis for sports agencies and developing IoT-powered science kits to inspire young learners. I’ve built scalable applications using frameworks like React, Next.js, and Flask, while leveraging cloud platforms like AWS and Azure for scalability. Beyond my work, I’ve contributed to impactful projects like the Smart Hospital Feedback System and HitamHub, winning accolades for my ability to lead and innovate.
+          </p>
+          <p>When I'm not coding, you'll find exploring new perspectives through literature and philosophy. Whether it’s tackling a challenging project or brainstorming innovative ideas, I’m always eager to push boundaries and create meaningful experiences. Let’s connect and bring ideas to life!</p>
+        </div>
+      </div>
 
-      <p>
-        I am Shravya Chepa and I am a developer. I am a Master's student in
-        Computer Science at San Diego State University. I worked in a start-up
-        as a Junior Full-stack developer in Bengaluru, India. I've focused on
-        various areas of web development including front-end development,
-        back-end development and cloud services. Currently I am also exploring
-        machine learning, data science and mobile development.
-      </p>
-
-      <div className="hobby-section">
+      {/* <div className="hobby-section">
         <div className="hobby-items">
           <img src={codeImg} alt="code" />
           <img src={bookImg} alt="books" />
@@ -86,7 +92,7 @@ function About() {
         >
           resume
         </a>
-      </p>
+      </p> */}
       <br />
     </div>
   );
