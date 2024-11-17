@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import SpaceInvader from "./components/Invader";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
+import Badges from "./components/Badges";
 
 function MainContent() {
   return (
@@ -24,6 +25,7 @@ function MainContent() {
       <Projects />
       <Skills />
       <Experience />
+      <Badges />
       <Gallery />
       <Contact />
       <Footer />
