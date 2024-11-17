@@ -17,6 +17,7 @@ function Contact() {
     subject: "",
     message: "",
   });
+
   const [sent, setSent] = useState(false);
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
@@ -120,8 +121,11 @@ function Contact() {
               <input
                 type="submit"
                 className="flat-button"
-                value={sent ? "MESSAGE SENT" : "SEND"}
+                value="SEND"
               />
+              {sent && (
+                  <span className="message-sent-text">Message Sent</span>
+                )}
             </li>
           </ul>
         </form>
