@@ -130,7 +130,7 @@ function Contact() {
             icon={faLocationDot}
             color="#d49813"
           />
-          <span> Hyderabad, India</span>
+          <span> San Diego, California, United States</span>
           <br />
           <FontAwesomeIcon
             icon={faEnvelope}
