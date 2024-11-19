@@ -1,110 +1,92 @@
 import "./Projects.scss";
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function Projects() {
   const navigate = useNavigate();
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startY, setStartY] = useState(0);
+  const [startScroll, setStartScroll] = useState(0);
+
+  const projects = [
+    "VizIt", "Hitam Hub", "Penvention", "Smart Hospital Feedback System", "Chepa Writes", "Pricewise", "Travelaries", "CoDoc", "Space Invaders", "Quotes API", "Infinite Scroll", "Text Analyzer", "Techscribe", "Quiz Mania", "Countdown", "Rock Paper Scissors", "Pong", "Learn CSS in a Day"
+  ];
 
   const handlePlayGame = () => {
-    navigate('/game'); 
-  }
-  return (
-    <div className="projects-section" id="projects">
-      <h1 className="star-wars">Projects</h1>
+    navigate('/game');
+  };
 
-      <div className="projects-main">
-        <ul className="projects-list">
-          <li className="project-item">
-            <p>
-              <a
-                href="https://shravyachepa-textanalyzer-streamlit-app-ied54z.streamlit.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <strong>Text Analyzer</strong>
-              </a>
-            </p>
-            <p>
-              A tool to assist users with writing. It has features that can
-              convert speech to text, provide analytics, suggest synonyms and
-              antonyms, help find meanings of words, spell check among many
-              others. Check it out <a href="https://shravyachepa-textanalyzer-streamlit-app-ied54z.streamlit.app/">here</a>
-            </p>
-          </li>
-          <li className="project-item">
-            <p>
-              <strong>HITAM ERP</strong>
-            </p>
-            <p>
-              Worked with a team to build an Enterprise Resource Planning mobile
-              application for my college, Hyderabad Institute of Technology and
-              Management. We digitalized several functions of the students and
-              the management.{" "}
-            </p>
-          </li>
-          <li className="project-item">
-            <p>
-              <strong>Penvention</strong>
-            </p>
-            <p>
-              A portal for poets and writers who wish to publish their content
-              online within a community.{" "}
-            </p>
-          </li>
-        </ul>
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartY(e.clientY);
+    setStartScroll(scrollPosition);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    const delta = startY - e.clientY;
+    const newPosition = Math.max(Math.min(startScroll + delta, 2000), 0);
+    setScrollPosition(newPosition);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const scrollUp = () => {
+    setScrollPosition(Math.max(scrollPosition - 150, 0));
+  };
+
+  const scrollDown = () => {
+    setScrollPosition(Math.min(scrollPosition + 150, 2000));
+  };
+
+  return (
+    <div className="projects-section" >
+      <div className="prevent-select projects" id="projects">
+      <div className="starry-bg"></div>
+      <div className="starry-bg"></div>
+      <div className="starry-bg"></div>
+      <div className="starry-bg"></div>
+      <h1 className="star-wars">Projects</h1>
+      
+      <div className="scroll-controls">
+        <button onClick={scrollUp} className="scroll-button up" aria-label="Scroll Up">↑</button>
+        <button onClick={scrollDown} className="scroll-button down" aria-label="Scroll Down">↓</button>
       </div>
-      <div className="projects-fun">
-        <div className="projects-fun-intro">
-          <h3>Fun</h3>
-          <p>Here are some fun projects I worked on while learning to code!</p>
-        </div>
-        <div className="projects-fun-items">
-        <a
-            href="https://shravya-chepa.github.io/infinite-scroll/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Infinite scroll
-          </a>
-          <a
-            href="https://shravya-pwdgen.netlify.app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Password maker
-          </a>
-          <a
-            href="https://shravya-chepa.github.io/countdown/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Countdown
-          </a>
-          <a
-            href="https://quiz-mania.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Quizmania
-          </a>
-          <a
-            href="https://shravya-chepa.github.io/quotegen/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Quotegen
-          </a>
-          <a
-            href="https://shravya-chepa.github.io/Learn-CSS-in-a-day/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn css in a day
-          </a>
+
+      <div className="projects-content"
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseUp}
+      >
+        <div 
+          className="crawl"
+          style={{
+            transform: `rotateX(25deg) translateY(-${scrollPosition}px)`,
+            animation: 'none',
+            top: 0
+          }}
+        >
+          {projects.map((project, index) => (
+            <div key={index} className="project-item">
+              <div className="project-title">
+                <h2>{project}</h2>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-      <br />
-      <button onClick={handlePlayGame} className="play-spaceinvaders">Play SpaceInvaders</button>
+
+      
     </div>
+    <button onClick={handlePlayGame} className="play-spaceinvaders">
+        Play Space Invaders
+      </button>
+    </div>
+    
   );
 }
 
