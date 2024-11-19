@@ -235,7 +235,7 @@ const Skills = () => {
 
   return (
     <div className='skills-section'>
-        <h1 className='cursive'>Skills</h1>
+        <h1 className='star-wars'>Skills</h1>
         <div ref={mountRef} style={{ width: '100%', height: '70vh' }} />
     </div>
   );

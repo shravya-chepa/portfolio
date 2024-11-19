@@ -66,7 +66,7 @@ function Contact() {
       <div className="starry-bg"></div>
       <div className="starry-bg"></div>
       <div className="starry-bg"></div>
-      <h1 className="cursive">Contact</h1>
+      <h1 className="star-wars">Contact</h1>
       <p>
         Feel free to drop me a message if you think I would be a good fit to contribute to your interesting project, or just say hi!
       </p>

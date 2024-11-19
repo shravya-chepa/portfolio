@@ -4,7 +4,7 @@ import spacecraftImage from "../assets/spacecraft.png";
 const Experience = () => {
     return (
         <div className="experience-section">
-            <h1 className='cursive'>Experience</h1>
+            <h1 className='star-wars'>Experience</h1>
             <div className="timeline">
 
                 <br />

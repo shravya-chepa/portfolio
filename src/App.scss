@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "StarWarsFont";
+  src: url("../public/fonts/SfDistantGalaxy.ttf") format("truetype");
+}
+
 .App {
   font-family: "Roboto", serif;
   font-weight: 400;
@@ -22,4 +27,12 @@ a {
   margin-right: calc((-100vw + 100%) / 2);
   margin-top: -40px;
   padding: 4% 34%;
+}
+
+.star-wars {
+  font-family: "StarWarsFont", serif;
+  margin: 0 auto;
+  color: #d49813;
+  display: flex;
+  justify-content: center;
 }

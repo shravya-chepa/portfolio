@@ -35,7 +35,7 @@ const Badges = () => {
 
   return (
     <div className='badges-section'>
-        <h1 className='cursive'>Certifications</h1>
+        <h1 className='star-wars'>Certifications</h1>
         <div 
       ref={containerRef}
       className="badge-container"

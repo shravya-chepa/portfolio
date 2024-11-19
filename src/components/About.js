@@ -11,7 +11,7 @@ import profilePhoto from "../assets/shravya-chepa.jpg"
 function About() {
   return (
     <div className="about-section" id="about">
-      <h1 className="cursive">About</h1>
+      <h1 className="star-wars">About</h1>
       <div className="about-content">
         <div className="about-profile-photo">
           <img src={profilePhoto} alt="Shravya writing on a whiteboard" className="about-photo"/>

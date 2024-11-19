@@ -112,7 +112,7 @@ function Gallery() {
   });
   return (
     <div className="gallery-section" id="gallery">
-      <h1 className="cursive">Gallery</h1>
+      <h1 className="star-wars">Gallery</h1>
 
       {/* <PhotoCarousel /> */}
       <div className="photos-section">
