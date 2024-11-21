@@ -40,25 +40,33 @@
   }
 }
 
+.badge svg {
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.6));  /* Glowing effect */
+  transition: filter 0.3s ease-in-out; /* Smooth transition for the glow */
+}
+
+.badge:hover svg {
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.9));  /* Stronger glow on hover */
+}
 
 .badge {
   position: relative;
   width: 216px;
   flex: 0 0 auto;
   margin: 40px;
-  user-select: none;  /* Prevent text selection while dragging */
+  
   
   .title {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 1.7em;
     position: absolute;
-    top: -28px;
+    top: 10px;
     border-radius: 8px 8px 0 0;
     text-align: center;
     width: 100%;
-    background: #686D76;
-    padding: 20px 0;
+    // background: #686D76;
+    padding: 20px;
   }
   
   .subtitle {
@@ -95,7 +103,7 @@
 
 @mixin setColor($color) {
   .title {
-    background: $color;
+    color: $color;
   }
   .subtitle:after {
     color: $color;
