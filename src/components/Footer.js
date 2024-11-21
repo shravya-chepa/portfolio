@@ -4,13 +4,13 @@ function Footer() {
   return (
     <div className="footer-section">
       <div className="attributes">
-        <a href="https://www.flaticon.com" title="icons">
+        <a href="https://www.flaticon.com" title="icons" target="_blank" rel="noopener noreferrer">
           Icons created by Freepik, bukeicon, Pixel perfect, Uniconlabs -
           Flaticon
         </a>
         <br />
-        <a href="https://www.freepik.com/free-vector/color-seamless-space-pattern_10838001.htm#query=cartoon%20space&position=24&from_view=keyword&track=ais">
-          Background image by tartila on Freepik
+        <a href="https://codepen.io/ybensira/pen/byYNBZ" target="_blank" rel="noopener noreferrer">
+          Background hyperspace animation by yonatan
         </a>
       </div>
 

@@ -212,7 +212,7 @@ const HyperspaceBackground = () => {
           initiateTimestamp: undefined,
         }
 
-        if (new Date().getTime() - initiateTimestamp > 1000) {
+        if (new Date().getTime() - initiateTimestamp > 600) {
           this.jump();
         } else {
           this.tween('velocity', VELOCITY_INC);
@@ -328,7 +328,7 @@ function Home() {
         )}
       </div>
       {/* Uncomment the following when you want to add text and profile photo */}
-      <div className="home-intro">
+      <div className="home-intro prevent-select">
         <div className="salutation">
           <h1>Hello, I am</h1>
         </div>
