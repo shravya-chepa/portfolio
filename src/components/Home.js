@@ -212,7 +212,7 @@ const HyperspaceBackground = () => {
           initiateTimestamp: undefined,
         }
 
-        if (new Date().getTime() - initiateTimestamp > 600) {
+        if (new Date().getTime() - initiateTimestamp > 1000) {
           this.jump();
         } else {
           this.tween('velocity', VELOCITY_INC);
