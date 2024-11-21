@@ -94,16 +94,6 @@
   }
 }
 
-.about-section::before {
-  content: " ";
-  display: block;
-  height: 60px;
-  width: 100vw;
-  background-image: linear-gradient(#000000, #030303);
-  margin-left: calc((-100vw + 100%) / 2);
-  margin-right: calc((-100vw + 100%) / 2);
-}
-
 @media only screen and (max-width: 768px) {
   .about-section {
     h1 {

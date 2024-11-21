@@ -6,95 +6,68 @@ h1 {
 .home-container {
   margin-top: 20vh;
   display: flex;
-  justify-content: space-between;
-  height: 65vh;
-
-  .home_intro {
-    margin-top: 10px;
-  }
-
-  .salutation {
-    animation: bounce;
-    animation-duration: 2s;
-  }
-
-  .self-intro {
-    animation: fadeIn;
-    animation-duration: 5s;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .role-intro {
-    animation: slideInRight;
-    animation-duration: 3s;
-  }
-
-  .profile-cartoon {
-    animation: fadeIn;
-    animation-duration: 7s;
-  }
-
-  .home_intro-name {
-    margin-left: 20px;
-  }
-
-  h4 {
-    margin-top: 15px;
-    color: #8dcbe6;
-    background-color: #000000;
-  }
-
-  .home_profile-photo {
-    width: 200px;
-    height: 200px;
-  }
+  justify-content: center; 
+  height: 70vh;
 }
 
-@media only screen and (max-width: 900px) {
-  .home-container {
-    .home_profile-photo {
-      width: 150px;
-      height: 150px;
-    }
+.home-intro {
+  text-align: center;
+  position: relative;
+}
 
-    .home_intro-name {
-      margin-left: -20px;
-      font-size: 2.5rem;
-    }
+.role-intro h4 {
+  font-size: 40px;
+}
+
+.astronaut-selector {
+  z-index: 1;
+  margin-top: 100px;
+
+  label {
+    margin-right: 10px;
+    color: #8dcbe6;
   }
 
-  h1 {
-    font-size: 2rem;
-    width: 100px;
+  #astronaut-dropdown {
+    background-color: #2d2d2d; 
+    color: #ffffff; 
+    border: 1px solid #555; 
+    border-radius: 5px; 
+    padding: 5px;
+    font-size: 16px;
   }
+  
+  #astronaut-dropdown option {
+    background-color: #333;
+    color: #ffffff;
+  }
+  
+  #astronaut-dropdown option:hover {
+    background-color: #555; 
+  }
+  
+  #astronaut-dropdown:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
-  .home-container {
-    display: block;
-    text-align: center;
+  .role-intro h4 {
+    font-size: 33px;
+  }
 
-    .home_profile-photo {
-      width: 150px;
-    }
+  label {
+    font-size: 14px;
+  }
 
-    h1 {
-      font-size: 20px;
-    }
-
-    h4 {
-      font-size: 16px;
-      margin-top: 5px;
-      margin-bottom: 30px;
-    }
-
-    .home_intro-name {
-      font-size: 40px;
-      margin-left: -5px;
+  .astronaut-selector {
+    #astronaut-dropdown {
+      font-size: 14px;
     }
   }
+
 }
 
 // animation
@@ -114,13 +87,14 @@ h1 {
   }
 }
 
-.astronaut-dog {
+.astronaut {
   animation: fly 50s linear infinite;
   top: 0;
   left: 0;
   position: fixed;
   z-index: 999;
   pointer-events: none;
+  width: 128px;
 
   img {
     width: 40%;
