@@ -56,20 +56,3 @@ a {
   user-select: none; /* Standard syntax */
 }
 
-.play-spaceinvaders {
-  background: #8dcbe6;
-  color: #000;
-  border: none;
-  padding: 10px 15px;
-  font-size: 12px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 4px;
-  position: absolute;
-  right: 20px;
-  bottom: 0;
-
-  &:hover {
-    background: #fff;
-  }
-}

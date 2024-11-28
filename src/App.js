@@ -12,15 +12,10 @@ import SpaceInvader from "./components/Invader";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Badges from "./components/Badges";
-import { useNavigate } from "react-router-dom";
 
 
 function MainContent() {
-  const navigate = useNavigate();
-
-  const handlePlayGame = () => {
-    navigate("/game");
-  };
+  
   return (
     <>
       <div className="home">
@@ -33,9 +28,6 @@ function MainContent() {
       <Skills />
       <Experience />
       <Badges />
-      <button onClick={handlePlayGame} className="play-spaceinvaders">
-        Play Space Invaders
-      </button>
       <Gallery />
       <Contact />
       <Footer />

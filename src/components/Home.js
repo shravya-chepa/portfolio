@@ -3,6 +3,8 @@ import "./Home.scss";
 import astronautDog from "../assets/astro-dog.png";
 import astronautCat from "../assets/astro-cat.png";
 import profile from "../assets/profile_photo.png";
+import { useNavigate } from "react-router-dom";
+
 
 const HyperspaceBackground = () => {
   const canvasRef = useRef(null);
@@ -307,6 +309,11 @@ const HyperspaceBackground = () => {
 };
 
 function Home() {
+  const navigate = useNavigate();
+
+  const handlePlayGame = () => {
+    navigate("/game");
+  };
   const [selectedAstronaut, setSelectedAstronaut] = useState("dog")
 
   const handleAstronautChange = (event) => {
@@ -339,9 +346,7 @@ function Home() {
         <div className="role-intro">
           <h4 className='cursive'>A Developer</h4>
         </div>
-        
-      </div>
-      <div className='astronaut-selector'>
+        <div className='astronaut-selector'>
           <label htmlFor='astronaut-dropdown'>Choose your astronaut </label>
           <select id='astronaut-dropdown' value={selectedAstronaut} onChange={handleAstronautChange}>
             <option value={"dog"}>Dog</option>
@@ -349,6 +354,11 @@ function Home() {
             <option value={"none"}>None</option>
           </select>
         </div>
+        <button onClick={handlePlayGame} className="play-spaceinvaders">
+        Play Space Invaders
+      </button>
+      </div>
+      
       {/* <div className="profile-cartoon">
         <img src={profile} alt="profile" className="home_profile-photo" />
       </div> */}

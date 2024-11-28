@@ -21,10 +21,10 @@ h1 {
 
 .astronaut-selector {
   z-index: 1;
-  position: absolute;
-  // margin-top: 100px;
-  bottom: 0;
-  left: 20px;
+  // position: absolute;
+  margin-top: 100px;
+  // bottom: 0;
+  // left: 20px;
 
   label {
     margin-right: 10px;
@@ -101,5 +101,21 @@ h1 {
 
   img {
     width: 40%;
+  }
+}
+
+.play-spaceinvaders {
+  background: #8dcbe6;
+  color: #000;
+  border: none;
+  padding: 5px 8px;
+  margin-top: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+
+  &:hover {
+    background: #fff;
   }
 }
