@@ -25,7 +25,7 @@ const Skills = () => {
 
     // Skills list
     const skills = [
-      "Python", "PHP", "JavaScript (JS)", "TypeScript (TS)", "C++", "C#", "Java", "Swift", "Ruby", 
+      "Python", "PHP", "JavaScript", "TypeScript", "C++", "C#", "Java", "Swift", "Ruby", 
       "React", "Vue.js", "Angular", "Next.js", 
       "Django", "Node.js", "Express.js", 
       "HTML5", "CSS3", "XML", 
@@ -36,8 +36,17 @@ const Skills = () => {
       "TensorFlow", "Raspberry Pi", "GraphQL", "Redux", "Figma", "Babel", "ESLint", "Flutter", "Postman", 
       "Webpack", "Gulp", 
       "Jest", 
-      "Apache", "Slack", "Visual Studio Code", 
+      "Apache", "Slack", "VS Code", 
       "Go", "Three.js", "Flask", "MySQL", "DynamoDB", "Amazon S3", "EC2", "RDS", "Lambda", "Cloudwatch", "Azure", "GCP", "Github", "Unit Testing", "Unix", "MVC", "CI/CD"
+    ];
+
+    // Predefined colors for skill labels
+    const labelColors = [
+      "#3498db", // Bright Blue
+      "#2ecc71", // Emerald Green
+      "#e74c3c", // Bright Red
+      "#EFB6C8", // Orange
+      "#9b59b6"  // Purple
     ];
 
     // Create sphere
@@ -62,33 +71,20 @@ const Skills = () => {
     directionalLight.position.set(5, 3, 5);
     scene.add(directionalLight);
 
-    const applyComicStyle = (canvas, context, labelText) => {
-      context.fillStyle = "#ffcccb"; // Light red background
-      context.fillRect(0, 0, canvas.width, canvas.height);
-    
-      context.font = "bold 28px 'Comic Sans MS', cursive";
-      context.textAlign = "center";
-      context.textBaseline = "middle";
-      context.fillStyle = "#000000"; // Black text
-      context.strokeStyle = "#ffffff"; // White outline
-      context.lineWidth = 2;
-      context.strokeText(labelText, canvas.width / 2, canvas.height / 2); // Text stroke
-      context.fillText(labelText, canvas.width / 2, canvas.height / 2); // Text fill
-    };
-    
-
     // Function to create skill labels
-    const createSkillLabel = (text) => {
+    const createSkillLabel = (text, index) => {
       const canvas = document.createElement("canvas");
       const context = canvas.getContext("2d");
       canvas.width = 256; 
       canvas.height = 64;
 
-      // applyComicStyle(canvas, context,text);
+      // Choose color cyclically from predefined colors
+      const color = labelColors[index % labelColors.length];
 
-      context.fillStyle = "#8dcbe6";
+      context.fillStyle = color;
       context.font = "bold 40px Arial";
       context.textAlign = "center";
+      context.textBaseline = "middle";
       context.fillText(text, canvas.width / 2, canvas.height / 2);
 
       const texture = new THREE.CanvasTexture(canvas);
@@ -101,7 +97,7 @@ const Skills = () => {
 
     // Add skills to sphere
     const labelOffset = 15;
-    skills.forEach((skill) => {
+    skills.forEach((skill, index) => {
       const theta = Math.acos((2 * Math.random()) - 1);
       const phi = 2 * Math.PI * Math.random();
 
@@ -109,7 +105,7 @@ const Skills = () => {
       const y = (sphereRadius + labelOffset) * Math.sin(theta) * Math.sin(phi);
       const z = (sphereRadius + labelOffset) * Math.cos(theta);
 
-      const label = createSkillLabel(skill);
+      const label = createSkillLabel(skill, index);
       label.position.set(x, y, z);
       sphere.add(label);
     });

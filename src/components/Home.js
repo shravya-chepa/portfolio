@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import "./Home.scss";
 import astronautDog from "../assets/astro-dog.png";
 import astronautCat from "../assets/astro-cat.png";
-import profile from "../assets/profile_photo.png";
+// import profile from "../assets/profile_photo.png";
 import { useNavigate } from "react-router-dom";
 
 
