@@ -339,7 +339,9 @@ function Home() {
         <div className="role-intro">
           <h4 className='cursive'>A Developer</h4>
         </div>
-        <div className='astronaut-selector'>
+        
+      </div>
+      <div className='astronaut-selector'>
           <label htmlFor='astronaut-dropdown'>Choose your astronaut </label>
           <select id='astronaut-dropdown' value={selectedAstronaut} onChange={handleAstronautChange}>
             <option value={"dog"}>Dog</option>
@@ -347,7 +349,6 @@ function Home() {
             <option value={"none"}>None</option>
           </select>
         </div>
-      </div>
       {/* <div className="profile-cartoon">
         <img src={profile} alt="profile" className="home_profile-photo" />
       </div> */}

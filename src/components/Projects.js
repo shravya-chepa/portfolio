@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
 import "./Projects.scss";
 
@@ -22,7 +21,6 @@ import pongImg from "../assets/projects/pong.png"
 import learnCssImg from "../assets/projects/learn-css.png"
 
 function Projects() {
-  const navigate = useNavigate();
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
   const [startY, setStartY] = useState(0);
@@ -158,11 +156,6 @@ function Projects() {
       websiteUrl: "https://shravya-chepa.github.io/Learn-CSS-in-a-day/"
     }
   ];
-  
-
-  const handlePlayGame = () => {
-    navigate("/game");
-  };
 
   const handleMouseDown = (e) => {
     setIsDragging(true);
@@ -239,9 +232,8 @@ function Projects() {
         </div>
       </div>
 
-      <button onClick={handlePlayGame} className="play-spaceinvaders">
-        Play Space Invaders
-      </button>
+      
+      <p className="project-click-info">Click on project to know more...</p>
 
       {openProjectCard && (
   <ProjectCard project={selectedProject} onClose={handleCloseProjectCard} />

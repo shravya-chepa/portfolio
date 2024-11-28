@@ -92,22 +92,9 @@
   }
 }
 
-.play-spaceinvaders {
-  background: #8dcbe6;
-  color: #000;
-  border: none;
-  padding: 10px 15px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 4px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-
-  &:hover {
-    background: #fff;
-  }
+.project-click-info {
+  font-size: 14px;
+  text-align: center;
 }
 
 // Ensure content is visible on smaller screens
