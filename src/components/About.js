@@ -1,11 +1,5 @@
 import "./About.scss";
 
-import codeImg from "../assets/code.png";
-import bookImg from "../assets/book.png";
-import filmSlateImg from "../assets/film-slate.png";
-import musicImg from "../assets/music.png";
-import cameraImg from "../assets/camera.png";
-import travelImg from "../assets/road-trip.png";
 import profilePhoto from "../assets/shravya-chepa.jpg"
 
 function About() {
