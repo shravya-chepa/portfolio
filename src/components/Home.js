@@ -1,9 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import "./Home.scss";
-import astronautDog from "../assets/astro-dog.png";
-import astronautCat from "../assets/astro-cat.png";
+
 // import profile from "../assets/profile_photo.png";
-import { useNavigate } from "react-router-dom";
 
 
 const HyperspaceBackground = () => {
@@ -309,31 +307,12 @@ const HyperspaceBackground = () => {
 };
 
 function Home() {
-  const navigate = useNavigate();
-
-  const handlePlayGame = () => {
-    navigate("/game");
-  };
-  const [selectedAstronaut, setSelectedAstronaut] = useState("dog")
-
-  const handleAstronautChange = (event) => {
-    setSelectedAstronaut(event.target.value)
-  }
-
-  const astronautImages = {
-    dog: astronautDog,
-    cat: astronautCat,
-    none: null,
-  }
+  
 
   return (
     <div className="home-container">
       <HyperspaceBackground />
-      <div className="astronaut">
-        {astronautImages[selectedAstronaut] && (
-          <img src={astronautImages[selectedAstronaut]} alt={`astro-${selectedAstronaut}`} />
-        )}
-      </div>
+      
       {/* Uncomment the following when you want to add text and profile photo */}
       <div className="home-intro prevent-select">
         <div className="salutation">
@@ -346,17 +325,7 @@ function Home() {
         <div className="role-intro">
           <h4 className='cursive'>A Developer</h4>
         </div>
-        <div className='astronaut-selector'>
-          <label htmlFor='astronaut-dropdown'>Choose your astronaut </label>
-          <select id='astronaut-dropdown' value={selectedAstronaut} onChange={handleAstronautChange}>
-            <option value={"dog"}>Dog</option>
-            <option value={"cat"}>Cat</option>
-            <option value={"none"}>None</option>
-          </select>
-        </div>
-        <button onClick={handlePlayGame} className="play-spaceinvaders">
-        Play Space Invaders
-      </button>
+        
       </div>
       
       {/* <div className="profile-cartoon">

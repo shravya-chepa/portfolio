@@ -233,7 +233,7 @@ function Projects() {
       </div>
 
       
-      <p className="project-click-info">Click on project to know more...</p>
+      <p className="project-click-info">Click on a project to know more...</p>
 
       {openProjectCard && (
   <ProjectCard project={selectedProject} onClose={handleCloseProjectCard} />

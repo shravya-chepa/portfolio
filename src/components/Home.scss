@@ -19,43 +19,6 @@ h1 {
   font-size: 40px;
 }
 
-.astronaut-selector {
-  z-index: 1;
-  // position: absolute;
-  margin-top: 100px;
-  // bottom: 0;
-  // left: 20px;
-
-  label {
-    margin-right: 10px;
-    color: #8dcbe6;
-  }
-
-  #astronaut-dropdown {
-    background-color: #2d2d2d; 
-    color: #ffffff; 
-    border: 1px solid #555; 
-    border-radius: 5px; 
-    padding: 5px;
-    font-size: 16px;
-  }
-  
-  #astronaut-dropdown option {
-    background-color: #333;
-    color: #ffffff;
-  }
-  
-  #astronaut-dropdown option:hover {
-    background-color: #555; 
-  }
-  
-  #astronaut-dropdown:focus {
-    outline: none; 
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-  }
-
-}
-
 @media only screen and (max-width: 768px) {
   .role-intro h4 {
     font-size: 33px;
@@ -73,49 +36,4 @@ h1 {
 
 }
 
-// animation
 
-@keyframes fly {
-  0% {
-    transform: translate(0, 110vh);
-  }
-  33% {
-    transform: translate(55vw, 0vh);
-  }
-  66% {
-    transform: translate(110vw, 55vh);
-  }
-  100% {
-    transform: translate(0, 110vh);
-  }
-}
-
-.astronaut {
-  animation: fly 50s linear infinite;
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: 999;
-  pointer-events: none;
-  width: 128px;
-
-  img {
-    width: 40%;
-  }
-}
-
-.play-spaceinvaders {
-  background: #8dcbe6;
-  color: #000;
-  border: none;
-  padding: 5px 8px;
-  margin-top: 15px;
-  font-size: 12px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 4px;
-
-  &:hover {
-    background: #fff;
-  }
-}

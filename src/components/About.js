@@ -17,7 +17,7 @@ function About() {
           <p>
             My professional experience spans diverse roles, including enhancing web accessibility for academic institutions, crafting personalized career guidance platforms, engineering microservices to automate athlete performance analysis for sports agencies and developing IoT-powered science kits to inspire young learners. I’ve built scalable applications using frameworks like React, Next.js, and Flask, while leveraging cloud platforms like AWS and Azure for scalability. Beyond my work, I’ve contributed to impactful projects like the Smart Hospital Feedback System and HitamHub, gaining recognition for my ability to lead and contribute to innovative solutions.
           </p>
-          <p>When I'm not coding, you'll find exploring new perspectives through literature and philosophy. Whether it’s tackling a challenging project or brainstorming innovative ideas, I’m always eager to push boundaries and create meaningful experiences. Let’s connect and bring ideas to life!</p>
+          <p>When I'm not coding, you'll find me exploring literature and philosophy. Whether it’s tackling a challenging project or brainstorming innovative ideas, I’m always eager to push boundaries and create meaningful experiences. Let’s connect and bring ideas to life!</p>
         </div>
       </div>
 
