@@ -113,6 +113,7 @@ function Gallery() {
   return (
     <div className="gallery-section" id="gallery">
       <h1 className="star-wars">Gallery</h1>
+      <p>I like taking pictures, here are some of my favorites-</p>
 
       {/* <PhotoCarousel /> */}
       <div className="photos-section">
