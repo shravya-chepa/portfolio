@@ -30,22 +30,22 @@ function NavigationBar() {
           <Nav className="ml-auto nav-bar-items" navbar>
             <NavItem>
               <NavLink className="nav-bar-color" href="#home">
-                home
+                Home
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink className="nav-bar-color" href="#about">
-                about
+                About
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink className="nav-bar-color" href="#projects">
-                projects
+                Projects
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink className="nav-bar-color" href="#gallery">
-                gallery
+                Gallery
               </NavLink>
             </NavItem>
             {/* <NavItem>
@@ -56,7 +56,7 @@ function NavigationBar() {
 
             <NavItem>
               <NavLink className="nav-bar-color" href="#contact">
-                contact
+                Contact
               </NavLink>
             </NavItem>
           </Nav>
