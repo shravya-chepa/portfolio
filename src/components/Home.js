@@ -9,12 +9,12 @@ const HyperspaceBackground = () => {
 
   useEffect(() => {
     const RAD = Math.PI / 180;
-    const VELOCITY_INC = 1.01;
+    const VELOCITY_INC = 1.005;
     const VELOCITY_INIT_INC = 1.025;
     const JUMP_VELOCITY_INC = 1.25;
     const JUMP_SIZE_INC = 1.15;
     const SIZE_INC = 1.01;
-    const BASE_SIZE = 1;
+    const BASE_SIZE = 0.3;
 
     const WARP_COLORS = [
       [197, 239, 247],
@@ -323,7 +323,7 @@ function Home() {
           <h1 className="home_intro-name star-wars">Shravya Chepa</h1>
         </div>
         <div className="role-intro">
-          <h4 className='cursive'>A Developer</h4>
+          <h4 className='cursive'>A Software Developer</h4>
         </div>
         
       </div>
