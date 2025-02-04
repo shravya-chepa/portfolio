@@ -169,17 +169,6 @@ function Contact() {
               color="#0072b1"
             />
           </a>
-          <a
-            href="https://www.instagram.com/shravya_chepa/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              style={{ marginRight: 10 }}
-              icon={faInstagram}
-              color="#d62976"
-            />
-          </a>
         </div>
       </div>
     </div>
