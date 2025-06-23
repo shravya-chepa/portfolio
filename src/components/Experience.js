@@ -9,7 +9,7 @@ const Experience = () => {
 
                 <br />
                 <div className="timeline-container left">
-                    <div className="date">FEB 2024</div>
+                    <div className="date">JAN 2024</div>
                     <div className="icon"></div>
                     <div className="content">
                         <h2>Web Developer, San Diego State University</h2>
@@ -23,7 +23,7 @@ const Experience = () => {
                     <img src={spacecraftImage} alt="spacecraft" className="rocket"/>
                 </div>
                 <div className="timeline-container right">
-                    <div className="date">SEP 2023</div>
+                    <div className="date">AUG 2023</div>
                     <div className="icon"></div>
                     <div className="content">
                         <h2>Software Developer, DiLab</h2>
@@ -33,7 +33,7 @@ const Experience = () => {
                     </div>
                 </div>
                 <div className="timeline-container left">
-                    <div className="date">AUG 2022</div>
+                    <div className="date">JUL 2022</div>
                     <div className="icon"></div>
                     <div className="content">
                         <h2>Full-stack Developer, Beneathatree</h2>
